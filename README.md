@@ -73,28 +73,6 @@
 
 <p align="center"><img src="docs/readme/mobile.jpg" alt="الكتاب على الهاتف" width="560"></p>
 
-## بنية المشروع
-
-```
-public/book/index.html   الكتاب ثلاثي الأبعاد كاملاً (صفحة مستقلة: HTML و CSS و JavaScript في ملف واحد)
-src/routes/index.tsx     الصفحة الرئيسية: تعرض الكتاب بملء الشاشة
-src/integrations/supabase  ربط Lovable Cloud (قاعدة البيانات وتسجيل الدخول)
-supabase/                إعدادات Supabase
-```
-
-الكتاب مبني بمكتبة [three.js](https://threejs.org) (الإصدار r128) دون أي إطار عمل، ويُحمَّل من الصفحة الرئيسية داخل إطار بملء الشاشة. أما الموقع المحيط به فمبني بـ TanStack Start و React و TypeScript و Tailwind CSS.
-
-## التشغيل محلياً
-
-```sh
-git clone https://github.com/3h0ll7/sixth-grade-physics.git
-cd sixth-grade-physics
-bun install
-bun run dev
-```
-
-ثم افتح الرابط الذي يظهر في الطرفية. لمعاينة الكتاب وحده افتح `/book/index.html`.
-
 ## خارطة الطريق
 
 - [x] الكتاب كاملاً: تسعة فصول
@@ -118,9 +96,6 @@ bun run dev
 
 **Sixth Grade Physics 3D** is an interactive 3D physics textbook for Iraqi 6th-grade scientific-track students: 9 chapters and 81 lessons, each with predict, read, try, equation and worked-example steps. It also has end-of-chapter quizzes (99 questions), progress tracking, in-book search, 360° rotation, zoom and two-finger pan.
 
-- The book: `public/book/index.html` (three.js r128, self-contained)
-- The site: TanStack Start, React, TypeScript, Tailwind CSS, Lovable Cloud (Supabase)
-- Run locally: `bun install && bun run dev`
 
 ## Build with Lovable
 
