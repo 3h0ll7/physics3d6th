@@ -1,24 +1,90 @@
-# Sixth Grade Physics
+<div dir="rtl">
 
-فيزياء السادس العلمي
+# الفيزياء السادس العلمي 3D
 
-This project was built with [Lovable](https://lovable.dev).
+كتاب فيزياء ثلاثي الأبعاد تفاعلي لطلاب **الصف السادس العلمي** في العراق.
+يُفتح الكتاب على مكتب افتراضي. في كل درس يتنبّأ الطالب أولاً، ثم يقرأ، ثم يجرّب الظاهرة بيده في مشهد ثلاثي الأبعاد، ثم يحل مثال الكتاب خطوة بخطوة.
+
+**Developed by: Hassan salman** — Intensive Care Unit Nurse, Al-Najaf Teaching Hospital
+[hassanaii.lovable.app](https://hassanaii.lovable.app) · [github.com/3h0ll7](https://github.com/3h0ll7)
+
+---
+
+## المحتوى
+
+| الفصل | الموضوع | عدد الدروس |
+|---|---|---|
+| الأول | المتسعات | 10 |
+| الثاني | الحث الكهرومغناطيسي | 13 |
+| الثالث | التيار المتناوب | 9 |
+| الرابع | الموجات الكهرومغناطيسية | 8 |
+| الخامس | البصريات الفيزيائية | 7 |
+| السادس | الفيزياء الحديثة | 8 |
+| السابع | إلكترونيات الحالة الصلبة | 8 |
+| الثامن | الأطياف الذرية والليزر | 9 |
+| التاسع | الفيزياء النووية | 9 |
+| **المجموع** | | **81** |
+
+## المميزات
+
+- **خمس خطوات لكل درس:** اقرأ · تنبّأ (مع لسان يُرفع لكشف الجواب) · جرّب · المعادلة والمصطلحات · مثال الكتاب محلولاً خطوة بخطوة.
+- **مشاهد ثلاثية الأبعاد تفاعلية** بمؤشرات وأزرار، مع شاشات قياس وقراءات حيّة.
+- **اختبار نهاية لكل فصل:** 99 سؤالاً من أسئلة «اختر العبارة الصحيحة» في الكتاب، مع شرح لكل إجابة ومراجعة للأخطاء.
+- **حفظ التقدم:** علامة «أتممتُ الدرس» وشريط تقدم لكل فصل وللكتاب كله.
+- **بحث داخل الكتاب** يتجاهل التشكيل واختلاف الهمزات والتاء المربوطة.
+- **التحكم بالمشهد:** دوران 360°، وتكبير وتصغير، وتحريك بإصبعين على الأجهزة اللوحية.
+- **حجم خط قابل للتعديل**، ووضع ليلي، وتصميم يعمل على الهاتف والجهاز اللوحي والحاسوب.
+- **لون ثابت لكل مفهوم** في الكتاب كله: الشحنة الموجبة، والسالبة، والمجال الكهربائي، والمغناطيسي، والطاقة.
+
+## بنية المشروع
+
+```
+public/book/index.html   الكتاب ثلاثي الأبعاد كاملاً (صفحة مستقلة: HTML و CSS و JavaScript في ملف واحد)
+src/routes/index.tsx     الصفحة الرئيسية: تعرض الكتاب بملء الشاشة
+src/integrations/supabase  ربط Lovable Cloud (قاعدة البيانات وتسجيل الدخول)
+supabase/                إعدادات Supabase
+```
+
+الكتاب مبني بمكتبة [three.js](https://threejs.org) (الإصدار r128) دون أي إطار عمل، ويُحمَّل من الصفحة الرئيسية داخل إطار بملء الشاشة. أما الموقع المحيط به فمبني بـ TanStack Start و React و TypeScript و Tailwind CSS.
+
+## التشغيل محلياً
+
+```sh
+git clone https://github.com/3h0ll7/sixth-grade-physics.git
+cd sixth-grade-physics
+bun install
+bun run dev
+```
+
+ثم افتح الرابط الذي يظهر في الطرفية. لمعاينة الكتاب وحده افتح `/book/index.html`.
+
+## خارطة الطريق
+
+- [x] الكتاب كاملاً: تسعة فصول
+- [x] اختبارات نهاية الفصول
+- [x] حفظ التقدم والبحث والتكبير والدوران
+- [ ] التسجيل برقم الهاتف ورمز تحقق
+- [ ] الاشتراك: الفصل الأول مجاني، وبقية الفصول باشتراك
+- [ ] الدفع بالدينار العراقي: بطاقات ماستر كارد وفيزا، وكي كارد، وزين كاش
+- [ ] لوحة إدارة للمشتركين والإيرادات وأكواد الخصم
+- [ ] حل مسائل نهاية كل فصل خطوة بخطوة
+
+## ملاحظة حول المحتوى
+
+يعتمد ترتيب الدروس وأمثلتها وأسئلتها على منهج الفيزياء للصف السادس العلمي الصادر عن وزارة التربية العراقية. أما المشاهد التفاعلية والشروح والاختبارات التفاعلية فهي من تطوير صاحب المشروع.
+
+</div>
+
+---
+
+## English summary
+
+**Sixth Grade Physics 3D** is an interactive 3D physics textbook for Iraqi 6th-grade scientific-track students: 9 chapters and 81 lessons, each with predict, read, try, equation and worked-example steps. It also has end-of-chapter quizzes (99 questions), progress tracking, in-book search, 360° rotation, zoom and two-finger pan.
+
+- The book: `public/book/index.html` (three.js r128, self-contained)
+- The site: TanStack Start, React, TypeScript, Tailwind CSS, Lovable Cloud (Supabase)
+- Run locally: `bun install && bun run dev`
 
 ## Build with Lovable
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/1441a7e8-b27a-4313-abab-b47ac295e97f).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+This project is connected to [Lovable](https://lovable.dev). Continue developing it in the [Lovable editor](https://lovable.dev/projects/1441a7e8-b27a-4313-abab-b47ac295e97f). Every change made in Lovable is committed to this repository, and pushes to `main` sync back into Lovable.
