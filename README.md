@@ -2,6 +2,11 @@
 
 # الفيزياء السادس العلمي 3D
 
+<p align="center">
+  <img src="docs/readme/hero-spin.gif" alt="غلاف الكتاب يدور 360 درجة" width="520">
+</p>
+
+
 كتاب فيزياء ثلاثي الأبعاد تفاعلي لطلاب **الصف السادس العلمي** في العراق.
 يُفتح الكتاب على مكتب افتراضي. في كل درس يتنبّأ الطالب أولاً، ثم يقرأ، ثم يجرّب الظاهرة بيده في مشهد ثلاثي الأبعاد، ثم يحل مثال الكتاب خطوة بخطوة.
 
@@ -35,6 +40,38 @@
 - **التحكم بالمشهد:** دوران 360°، وتكبير وتصغير، وتحريك بإصبعين على الأجهزة اللوحية.
 - **حجم خط قابل للتعديل**، ووضع ليلي، وتصميم يعمل على الهاتف والجهاز اللوحي والحاسوب.
 - **لون ثابت لكل مفهوم** في الكتاب كله: الشحنة الموجبة، والسالبة، والمجال الكهربائي، والمغناطيسي، والطاقة.
+
+## جولة مصوّرة
+
+### التجربة بيدك
+حرّك المؤشر فتتغير التجربة وقراءاتها مباشرة:
+
+<p align="center"><img src="docs/readme/try-slider.gif" alt="تحريك مؤشر الشحنة في درس المتسعة" width="720"></p>
+
+### من الدروس
+
+<table>
+<tr>
+<td align="center" width="50%"><img src="docs/readme/lesson-capacitor.jpg" alt="درس المتسعة"><br><sub>الفصل الأول · المتسعة</sub></td>
+<td align="center" width="50%"><img src="docs/readme/lesson-inductance.jpg" alt="درس المحاثة"><br><sub>الفصل الثاني · المحاثة والحث الذاتي</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/readme/lesson-young.jpg" alt="محزز الحيود"><br><sub>الفصل الخامس · محزز الحيود</sub></td>
+<td align="center"><img src="docs/readme/lesson-bohr.jpg" alt="أنموذج بور"><br><sub>الفصل الثامن · أنموذج بور</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/readme/lesson-nucleus.jpg" alt="تركيب النواة"><br><sub>الفصل التاسع · تركيب النواة</sub></td>
+<td align="center"><img src="docs/readme/cover.jpg" alt="الغلاف"><br><sub>الغلاف وبطاقة الفصول</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/readme/quiz.jpg" alt="اختبار نهاية الفصل"><br><sub>اختبار نهاية الفصل</sub></td>
+<td align="center"><img src="docs/readme/search.jpg" alt="البحث داخل الكتاب"><br><sub>البحث داخل الكتاب</sub></td>
+</tr>
+</table>
+
+### على الهاتف والجهاز اللوحي
+
+<p align="center"><img src="docs/readme/mobile.jpg" alt="الكتاب على الهاتف" width="560"></p>
 
 ## بنية المشروع
 
